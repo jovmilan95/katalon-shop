@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Show View cart button after adding product to cart</description>
+   <name>Show View Cart button by clicking on Add To Cart button</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a1f608d-1458-4514-a225-c580b92f2daa</testCaseGuid>
+</TestCaseEntity>

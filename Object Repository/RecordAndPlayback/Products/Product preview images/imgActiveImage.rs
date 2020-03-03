@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>imgActiveImage</name>
+   <tag></tag>
+   <elementGuidId>c98084cd-b2c1-4ece-b056-696bd5c36963</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//img[contains(@src,'http://cms.demo.katalon.com/wp-content/uploads/2019/08/poster_2_up.jpg')])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pswp__img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>http://cms.demo.katalon.com/wp-content/uploads/2019/08/poster_2_up.jpg</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;product-template-default single single-product postid-54 theme-ellie woocommerce woocommerce-page woocommerce-js woocommerce-active ellie-menu-align-center ellie-logo-position-center ellie-header-menu-under    ellie-layout-no&quot;]/div[@class=&quot;pswp pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--animated-in pswp--zoom-allowed pswp--visible pswp--has_mouse&quot;]/div[@class=&quot;pswp__scroll-wrap&quot;]/div[@class=&quot;pswp__container&quot;]/div[@class=&quot;pswp__item&quot;]/div[@class=&quot;pswp__zoom-wrap&quot;]/img[@class=&quot;pswp__img&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[contains(@src,'http://cms.demo.katalon.com/wp-content/uploads/2019/08/poster_2_up.jpg')])[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/img</value>
+   </webElementXpaths>
+</WebElementEntity>
