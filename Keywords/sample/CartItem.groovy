@@ -47,7 +47,7 @@ public class CartItem {
 	}
 
 	public void remove() {
-		getRemoveBtn.click()
+		getRemoveBtn().click()
 	}
 
 	public String getName() {

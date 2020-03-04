@@ -14,6 +14,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import java.util.stream.Collectors as Collectors
 
 CustomKeywords.'sample.Login.loginIntoApplicationWithGlobalVariable'()
 
@@ -22,13 +23,16 @@ WebUI.waitForElementPresent(findTestObject('Pages/Shop/lnkViewCart'), GlobalVari
 WebUI.click(findTestObject('Pages/Shop/lnkViewCart'))
 
 TestData product = findTestData(GlobalVariable.dataFile)
-List<String> productList = product.getAllData().stream()
-							.map{data -> data[0]}/*get first column of each row in data file */
-							.collect(Collectors.toList())/*add collect and parse to list*/
 
-for(def productName : productList){
-	CustomKeywords.'sample.Shop.addToCart'(productName.toString(), GlobalVariable.urlProduct)
+List<String> productList = product.getAllData().stream().map({ def data ->
+        data[0] /*get first column of each row in data file */
+    }).collect(Collectors.toList() /*add collect and parse to list*/ )
+
+for (def productName : productList) {
+    CustomKeywords.'sample.Shop.addToCart'(productName.toString(), GlobalVariable.urlProduct)
 }
 
 assert CustomKeywords.'sample.Cart.validateItemSubtotalPrices'()
+
+WebUI.closeBrowser()
 

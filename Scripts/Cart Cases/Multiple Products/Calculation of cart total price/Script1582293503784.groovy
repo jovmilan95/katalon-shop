@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+import java.util.stream.Collectors
 CustomKeywords.'sample.Login.loginIntoApplicationWithGlobalVariable'()
 
 WebUI.waitForElementPresent(findTestObject('Pages/Shop/lnkViewCart'), GlobalVariable.waitPresentTimeout)

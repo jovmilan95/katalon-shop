@@ -31,9 +31,8 @@ public class Cart {
 
 	@Keyword
 	def void clearCart() {
-		List<CartItem> items = getCartItems()
-		for(item in items) {
-			item.remove()
+		while (getCartItems().size() != 0) {
+			getCartItems().get(0).remove();
 		}
 	}
 

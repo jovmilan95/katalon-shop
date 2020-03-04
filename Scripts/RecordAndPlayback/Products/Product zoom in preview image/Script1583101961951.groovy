@@ -28,8 +28,8 @@ WebUI.click(findTestObject('RecordAndPlayback/Products/Product preview image zoo
 
 String classAfterZoomIn = WebUI.getAttribute(findTestObject('RecordAndPlayback/Products/Product preview image zoom in/divImgZoomWrapper'), 
     'class')
-
-assert classAttribute.contains('pswp--zoomed-in')
+CharSequence c = 'pswp--zoomed-in';
+assert classAfterZoomIn.contains(c)
 
 WebUI.closeBrowser()
 

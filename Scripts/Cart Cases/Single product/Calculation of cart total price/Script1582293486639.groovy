@@ -27,3 +27,5 @@ CustomKeywords.'sample.Cart.changeItemQuantityWithGlobalVariable'()
 
 assert CustomKeywords.'sample.Cart.validateCartTotalPrice'()
 
+WebUI.closeBrowser()
+
